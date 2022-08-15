@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  family-budget-staging:
+    build:
+      context: ../../
+      dockerfile: docker/staging/Dockerfile
+    image: family-budget-staging
+    ports:
+      - '3000:3000'

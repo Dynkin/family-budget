@@ -14,8 +14,10 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Next.js</a> on Docker!
         </h1>
+        <h2 className={styles.title}>with Multiple Deployment Environments</h2>
+        <h3>API_URL: {process.env.NEXT_PUBLIC_API_URL}</h3>
 
         <p className={styles.description}>
           Get started by editing{' '}

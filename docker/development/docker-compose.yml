@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  family-budget-development:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    image: family-budget-development
+    ports:
+      - '3000:3000'
